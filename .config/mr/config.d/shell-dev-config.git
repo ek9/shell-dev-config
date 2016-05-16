@@ -1,0 +1,32 @@
+## ek9/shell-dev-config - https://github.com/ek9/shell-config
+## shell-dev-config.git
+## Setup ek9/shell-dev-config and dependant repositories
+
+### DEPENDENCIES - cloned via git
+# tmux TPM
+[.config/tmux/plugins/tpm]
+checkout = git clone https://github.com/tmux-plugins/tpm &&
+    bash ./tpm/bin/install_plugins
+
+# dircolors solarized
+[.config/vcsh/repo.d/dircolors-solarized]
+checkout = git clone https://github.com/seebi/dircolors-solarized &&
+    cd ~/.config
+    ln -sf ../.config/vcsh/repo.d/dircolors-solarized/dircolors.256dark dir_colors
+
+# base16 shell
+[.config/vcsh/repo.d/base16-shell]
+checkout = git clone https://github.com/chriskempson/base16-shell
+
+# liquidprompt - for bash
+[.config/vcsh/repo.d/liquidprompt]
+checkout = git clone https://github.com/nojhan/liquidprompt
+
+# antigen
+[.config/vcsh/repo.d/antigen]
+checkout = git clone https://github.com/zsh-users/antigen.git
+
+### MAIN REPOSITORY - cloned via vcsh
+# shell-dev-config
+[$HOME/.config/vcsh/repo.d/shell-dev-config.git]
+checkout = vcsh clone https://github.com/ek9/shell-dev-config
