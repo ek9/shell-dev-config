@@ -1,0 +1,17 @@
+*
+!/.config
+!/.config/mr
+!/.config/mr/config.d
+!/.config/mr/config.d/shell-dev-config.git
+!/.config/shell
+!/.config/shell/config.d
+!/.config/shell/config.d/22-node-nvm.sh
+!/.config/shell/config.d/23-ruby-rvm.sh
+!/.config/shell/profile.d
+!/.config/shell/profile.d/015-steam.sh
+!/.gemrc
+!/.gitconfig
+!/.gitignore.d
+!/.gitignore.d/shell-dev-config
+!/.nvmrc
+!/.rvmrc
