@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-## ek9/shell-config - https://github.com/ek9/shell-config
+## ek9/shell-dev-config - https://github.com/ek9/shell-dev-config
 ## 22-nodejs.sh
 ## Configures node, with either nvm or npm global support (no sudo)
 
