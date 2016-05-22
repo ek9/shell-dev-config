@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ## ek9/shell-dev-config - https://github.com/ek9/shell-dev-config
-## 22-nodejs.sh
-## Configures node, with either nvm or npm global support (no sudo)
+## 22-node-nvm.sh
+## Configures node nvm or npm global support (no sudo)
 
 NVM_DIR="${HOME}/.local/share/nvm"
 NPM_PACKAGES="${HOME}/.local/share/npm"
@@ -9,6 +9,7 @@ NPM_PACKAGES="${HOME}/.local/share/npm"
 
 # install nvm
 if [[ ! -d "$NVM_DIR" ]]; then
+     echo "Installing NVM"
      curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | NVM_DIR=~/.local/share/nvm bash 
      nvm install node
 fi
