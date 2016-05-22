@@ -4,6 +4,14 @@
 ## source RVM if it is installed
 
 RVM_PATH="$HOME/.local/share/rvm"
+
+# install rvm
+if [[ ! -d "$RVM_PATH" ]]; then
+    echo "Installing RVM"
+    gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+    curl -sSL https://get.rvm.io | bash -s stable
+fi
+
 if [[ -s "$RVM_PATH" ]]; then
     export PATH="$RVM_PATH/bin:$PATH" # Add RVM to PATH for scripting
     rvm() {
