@@ -2,7 +2,7 @@ shell-dev-config
 ================
 
 [shell-dev-config][0] is a personal dotfiles repository for shell development
-tools ([nvm for node][3], [rvm for ruby][4], [virtualenv for python][5] and
+tools ([node nvm][3], [ruby rvm][4], [virtualenv for python][5] and
 [vagrant][6]). It is compatible with [vcsh-dotfiles][1] and extends upon
 [shell-config][2].
 
@@ -24,9 +24,9 @@ Clone [shell-config][2] and [shell-dev-config][0] via `vcsh`:
     $ vcsh clone https://github.com/ek9/shell-dev-config
     $ mr update
 
-When starting new shell (`bash` or `zsh`), we will make sure [nvm][3], [rvm][4]
-and [virtualenv][5] is initialized. It will also provide a default
-`Vagrantfile` for generic [vagrant]][6] configuration.
+When starting new shell (`bash` or `zsh`), we will make sure [nvm][3] and [rvm][4]
+is setup. It also privodes default `Vagrantfile` for generic [vagrant][6]
+configuration.
 
 ## Overview
 
@@ -40,7 +40,7 @@ and [virtualenv][5] is initialized. It will also provide a default
 
 ## Authors
 
-Copyright (c) 2016 ek9 <dev@ek9.co> (https://ek9.co).
+Copyright (c) 2016-2017 ek9 <dev@ek9.co> (https://ek9.co).
 
 ## License
 
