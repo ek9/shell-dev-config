@@ -6,23 +6,21 @@ tools ([node nvm][3], [ruby rvm][4], [virtualenv for python][5] and
 [vagrant][6]). It is compatible with [vcsh-dotfiles][1] and extends upon
 [shell-config][2].
 
+Part of [ek9/dotfiles][10] collection.
+
 ## Requirements
 
-- [vcsh-dotfiles][1] or compatible setup (for hooks and updating)
-- [shell-config][2] or compatible setup (to read files from shell specific
+- [vcsh-dotfiles][1]
+- [ek9/shell-config][2] compatible setup (to read files from shell specific
   directories)
+
 
 ## Install
 
-This repository is compatible with [vcsh-dotfiles][1] and extends upon
-[shell-config][2]. You are advised to have `vcsh-dotfiles bootstrap` and `mr
-update` working.
+Clone via `vcsh-dotfiles`:
 
-Clone [shell-config][2] and [shell-dev-config][0] via `vcsh`:
-
-    $ vcsh clone https://github.com/ek9/shell-config
-    $ vcsh clone https://github.com/ek9/shell-dev-config
-    $ mr update
+    $ vcsh-dotfiles clone https://github.com/ek9/shell-config
+    $ vcsh-dotfiles clone https://github.com/ek9/shell-dev-config
 
 When starting new shell (`bash` or `zsh`), we will make sure [nvm][3] and [rvm][4]
 is setup. It also privodes default `Vagrantfile` for generic [vagrant][6]
@@ -53,3 +51,4 @@ Licensed under [MIT License](LICENSE).
 [4]: https://rvm.io/
 [5]: http://docs.python-guide.org/en/latest/dev/virtualenvs/
 [6]: https://www.vagrantup.com/docs/
+[10]: https://github.com/ek9/dotfiles
