@@ -1,1 +1,4 @@
-rvm_path=$HOME/.local/share/rvm
+export rvm_path=$HOME/.local/share/rvm
+export rvm_autoupdate_flag=2
+export rvm_gem_options="--no-rdoc --no-ri"
+
