@@ -8,6 +8,7 @@
 !/.config/shell/config.d/22-node-nvm.sh
 !/.config/shell/config.d/23-ruby-rvm.sh
 !/.config/shell/profile.d
+!/.config/shell/profile.d/04-composerbin.sh
 !/.config/shell/profile.d/20-vagrant.sh
 !/.gemrc
 !/.gitconfig
