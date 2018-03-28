@@ -3,14 +3,16 @@
 [alias]
     a = add
     bp = remote prune origin
+    br = branch
     c = commit
     co = checkout
     cb = checkout -b
     rb = rebase
     rbc = rebase --continue
     rh = reset HEAD
+    st = status
     lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    merge = merge --no-ff
+    merge = merge --no-ff --commit
     up = pull --rebase --autostash
     wdiff = diff --color-words
 [log]
